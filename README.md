@@ -39,7 +39,7 @@ chmod +x installhost.sh
 
 ### 3. Execute o script de instalação
 ```bash
-./installclient.sh
+./installhost.sh
 ```
 ---
 
