@@ -24,12 +24,6 @@ type = tcp
 local_ip = 127.0.0.1
 local_port = 22
 remote_port = 6000
-
-[meu_udp]
-type = udp
-local_ip = 127.0.0.1
-local_port = 19132
-remote_port = 19132
 EOF
 
 echo "[+] Iniciando FRP client..."
