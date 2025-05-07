@@ -4,7 +4,7 @@
 FRP_VERSION="0.58.0"
 FRP_DIR="frp_${FRP_VERSION}_linux_amd64"
 DOWNLOAD_URL="https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/${FRP_DIR}.tar.gz"
-VPS_IP="15.229.18.199"
+VPS_IP="IP-DA-VPS"
 
 echo "[+] Baixando FRP..."
 wget -q $DOWNLOAD_URL -O frp.tar.gz
