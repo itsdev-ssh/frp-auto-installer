@@ -57,7 +57,7 @@ chmod +x installclient.sh
 ```bash
 nano installclient.sh
 ```
-Modifique a parte de ```VPS_IP="IP-DA-VPS"``` Modifique para o IP real de sua VPS.
+Modifique a parte de ```VPS_IP="IP-DA-VPS"``` Coloque o IP real de sua VPS.
 ### 4. Execute o script de inicialização
 ```bash
 ./installclient.sh
