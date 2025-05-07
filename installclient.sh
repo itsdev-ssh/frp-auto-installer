@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Instala FRP Client (frpc) na máquina local (CGNAT)
+# Instala FRP Client
 FRP_VERSION="0.58.0"
 FRP_DIR="frp_${FRP_VERSION}_linux_amd64"
 DOWNLOAD_URL="https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/${FRP_DIR}.tar.gz"
