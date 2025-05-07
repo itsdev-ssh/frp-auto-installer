@@ -41,6 +41,7 @@ chmod +x installhost.sh
 ```bash
 ./installclient.sh
 ```
+---
 
 ## 📦 Instalação na Máquina/servidor local
 ### 1. Clone este repositório
@@ -63,3 +64,37 @@ Modifique a parte de ```VPS_IP="IP-DA-VPS"``` Coloque o IP real de sua VPS.
 ./installclient.sh
 ```
 Pronto, seu servidor local estará com IP Fixo e público.
+
+---
+
+## Como abrir porta UDP e TCP
+No seu servidor local, abra o arquivo de configuração:
+```bash
+nano ~/frp/frpc.ini
+```
+Agora adicione blocos como este para cada serviço que quiser expor:
+
+Exemplo: Liberar porta 25565 TCP (Minecraft Java)
+```bash
+[minecraft]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 25565
+remote_port = 25565
+```
+Exemplo: Liberar porta 19132 UDP (Minecraft Bedrock)
+```bash
+[minecraft_bedrock]
+type = udp
+local_ip = 127.0.0.1
+local_port = 19132
+remote_port = 19132
+```
+Exemplo: Liberar HTTP (porta 80)
+```bash
+[web]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 80
+remote_port = 8080
+```
